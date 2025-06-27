@@ -23,9 +23,9 @@ int main(){
     }
     printf("Total value: %d\n", total);
     if(total > 7){
-        printf("You won!");
+        printf("%s won!\n",name);
     } else{
-        printf("You lost!");
+        printf("%s lost!\n",name);
     }
 
     return 0;
