@@ -7,7 +7,7 @@ int main(){
     int d[2];
     int total = 0;
 
-    printf("Rolling dice...\n");
+    printf("Rolling the dice...\n");
     for(int i = 0 ; i < 2 ; i++){
         d[i] = rand() % 7;
         total += d[i];
@@ -16,6 +16,11 @@ int main(){
         printf("Die %d: %d\n",i+1,d[i]);
     }
     printf("Total value: %d\n", total);
+    if(total > 7){
+        printf("%s won!",name);
+    } else{
+        printf("%s lost!",name);
+    }
 
     return 0;
 }
